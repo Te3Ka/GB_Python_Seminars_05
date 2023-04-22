@@ -9,5 +9,11 @@ Output: 21
 Задание необходимо решать через рекурсию
 '''
 
-def fibonacci(n)
-    
+def fibonacci(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+_n = int(input('n = '))
+print(fibonacci(_n))
